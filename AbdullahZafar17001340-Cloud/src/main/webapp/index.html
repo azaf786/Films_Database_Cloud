@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/jquery.js">
+	
+</script>
+<script src="scripts/mainScript21.js">
+	
+</script>
+<!-- CSS-->
+<link href="css/stylesheet.css" rel="stylesheet">
+
+<!--jQuery Dialog-->
+<!--  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/ui-darkness/jquery-ui.css" rel="stylesheet">-->
+<link rel="stylesheet"  type = "text/css" href="jquery-ui-themes-1.9.2/themes/ui-darkness/jquery-ui.css" >
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-1.10.2.js" integrity="sha256-it5nQKHTz+34HijZJQkpNBIHsjpV8b6QzMJs9tmOBSo=" crossorigin="anonymous"></script>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>-->
+<script type="text/javascript" src="jquery-ui-1.9.2/ui/minified/jquery-ui.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>AZAF's Film Web Service</title>
+</head>
+<body>
+	<img class = "logo" alt="title" src="img/titleimg.png">
+	<br>
+
+	<div id="searchDialog" title="Search Film">
+		<label>Please enter Film name</label> <br> <input type=text id="searchField"> 
+		<button id="searchButton">Search</button>
+	</div>
+
+	<h1 id="type"></h1>
+	<input id="Dialogsearch" type="button" value="Search Film">
+	<input id="DialogsearchAttribute" type="button"
+		value="Atrribute Search">
+	<input id="Dialoginsert" type="button" value="Insert Film">
+	<input id="Dialogupdate" type="button" value="Update Film">
+	<input id="Dialogdelete" type="button" value="Delete Film">
+	<input id="allFilmsJson" type="button" value="All Films in Json">
+	<input id="allFilmsXml" type="button" value="All Films in Xml">
+	<input id="allFilmsText" type="button" value="All Films in Text">
+
+	<select id="format">
+		<option value="text">Text</option>
+		<option value="xml">XML</option>
+		<option value="json">JSON</option>
+	</select>
+	<br>
+
+
+	<div id=JsonFilmDiv>
+		<table id="jsonTable" class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">Film Id</th>
+					<th scope="col">Film Name</th>
+					<th scope="col">Film Year</th>
+					<th scope="col">Film Credits</th>
+					<th scope="col">Film Duration</th>
+					<th scope="col">Film Reviews</th>
+				</tr>
+			</thead>
+			<tbody id="tbJson" class="thead-dark">
+			</tbody>
+		</table>
+	</div>
+
+
+	<div id=XmlFilmDiv>
+		<table id="xmlTable" class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">Film Id</th>
+					<th scope="col">Film Name</th>
+					<th scope="col">Film Year</th>
+					<th scope="col">Film Credits</th>
+					<th scope="col">Film Duration</th>
+					<th scope="col">Film Reviews</th>
+				</tr>
+			</thead>
+			<tbody id="tbXml" class="thead-dark">
+			</tbody>
+		</table>
+	</div>
+
+
+
+
+
+	<div id="resultRegion"></div>
+
+	<div id=allJsonFilms>
+		<table id="tableAllJson" class="table table-borderless table-light">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">Film Id</th>
+					<th scope="col">Film Name</th>
+					<th scope="col">Film Year</th>
+					<th scope="col">Film Credits</th>
+					<th scope="col">Film Duration</th>
+					<th scope="col">Film Reviews</th>
+				</tr>
+			</thead>
+			<tbody id="tbAllJson" class="thead-dark">
+			</tbody>
+		</table>
+	</div>
+
+	<div id=allXmlFilms>
+		<table id="tableAllXml" class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">Film Id</th>
+					<th scope="col">Film Name</th>
+					<th scope="col">Film Year</th>
+					<th scope="col">Film Credits</th>
+					<th scope="col">Film Duration</th>
+					<th scope="col">Film Reviews</th>
+				</tr>
+			</thead>
+			<tbody id="tbAllXml" class="thead-dark">
+			</tbody>
+		</table>
+	</div>
+
+
+
+
+	<div id="deleteDialogConfirm" title="Confirm delete?">
+		<button id="confirmDelete">Delete</button>
+		<button id="cancelDelete">Cancel</button>
+	</div>
+	<div id="deleteDialog" title="Delete Film">
+		<label>Enter Film ID you wish to delete</label> <br> <input
+			type=number id="deleteField"> </input>
+		<button id="deleteButton">Delete</button>
+	</div>
+
+
+
+	<div id="insertDialog" title="Insert Film">
+		<label>Enter film data to Insert</label> <br>
+
+		<div id="attributeSearchDialog" title="Attribute Search">
+			<select id="AttributeToSearch">
+				<option value="filmID">Film Id</option>
+				<option value="filmName">Film Name</option>
+				<option value="filmYear">Film Year</option>
+				<option value="filmDuration">Film Duration</option>
+				<option value="filmCredits">Film Credits</option>
+				<option value="filmReview">Film Reviews</option>
+			</select> <input type="text" id="InfoToSearch" placeholder="Enter information">
+			<button id="AttributeSearchButton">Search</button>
+		</div>
+
+		<input type=text id="insertFilmName" placeholder="Name"> </input> <input
+			type=number id="insertFilmYear" placeholder="Year"> </input> <input
+			type=text id="insertFilmCredits" placeholder="Credits"> </input> <input
+			type=text id="insertFilmDuration" placeholder="Duration"> </input>
+		<input type=text id="insertFilmReview" placeholder="Review"> </input>
+		<button id="insertButton">Insert</button>
+	</div>
+
+
+
+	<div id="updateDialog" title="Update Film">
+		<label>Enter film ID and the film data to Update</label> <br> <input
+			type=number id="updateFilmId" placeholder="ID"> </input> <input
+			type=text id="updateFilmName" placeholder="Name"> </input> <input
+			type=number id="updateFilmYear" placeholder="Year"> </input> <input
+			type=text id="updateFilmCredits" placeholder="Credits"> </input> <input
+			type=text id="updateFilmDuration" placeholder="Duration"> </input>
+		<input type=text id="updateFilmReview" placeholder="Review"> </input>
+		<button id="updateButton">Update</button>
+	</div>
+
+	<div id="showAllFilms"></div>
+
+
+
+</body>
+</html>

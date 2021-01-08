@@ -1,0 +1,303 @@
+@import "https://fonts.googleapis.com/css?family=Droid+Serif";
+/* Above line is used for online google font */
+h2 {
+text-align:center;
+font-size:27px
+}
+hr {
+margin-bottom:30px
+}
+p {
+color:#000;
+font-size:16px;
+font-weight:700
+}
+
+#allFilmsJson {
+border:1px solid #cb181d;
+width:135px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#00000;
+border-radius:3px;
+background:linear-gradient(to bottom, #ffff 5%, #ffff 100%);
+cursor:pointer
+
+}
+#allFilmsXml {
+border:1px solid #cb181d;
+width:135px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#00000;
+border-radius:3px;
+background:linear-gradient(to bottom, #ffff 5%, #ffff 100%);
+cursor:pointer
+
+}
+
+
+#allFilmsText {
+border:1px solid #cb181d;
+width:135px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#00000;
+border-radius:3px;
+background:linear-gradient(to bottom, #ffff 5%, #ffff 100%);
+cursor:pointer
+
+}
+
+#DialogsearchAttribute {
+border:1px solid #cb181d;
+width:135px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #ff0072 5%, #cf1786 100%);
+cursor:pointer
+
+}
+#Dialogsearch {
+border:1px solid #cb181d;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #ff0072 5%, #cf1786 100%);
+cursor:pointer
+
+}
+
+#Dialogdelete {
+border:1px solid #cb181d;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #ff0072 5%,#cf1786 100%);
+cursor:pointer
+
+}
+
+#Dialoginsert {
+border:1px solid #cb181d;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #ff0072 5%,#cf1786 100%);
+cursor:pointer
+
+}
+
+#Dialogupdate {
+border:1px solid #cb181d;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #ff0072 5%,#cf1786 100%);
+cursor:pointer
+
+}
+
+#format {
+border:1px solid #008ccc;
+width:95px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#000000;
+border-radius:3px;
+background:linear-gradient(to bottom, #0db6db 5%,#12a1cc 100%);
+cursor:pointer
+
+}
+
+#deleteButton {
+border:1px solid #cb181d;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #ff0072 5%,#cf1786 100%);
+cursor:pointer
+
+}
+#searchButton {
+border:1px solid #cb181d;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #ff0072 5%,#cf1786 100%);
+cursor:pointer
+
+}
+
+#AttributeSearchButton {
+border:1px solid #cb181d;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #ff0072 5%,#cf1786 100%);
+cursor:pointer
+
+}
+
+#confirmDelete {
+border:1px solid #ffffff;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #67000d 5%,#a50f15 100%);
+cursor:pointer
+
+}
+#cancelDelete {
+border:1px solid #ffffff;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#000000;
+border-radius:3px;
+background:linear-gradient(to bottom, #edeb79 5%,#cae01f 100%);
+cursor:pointer
+
+}
+
+#insertButton {
+border:1px solid #cb181d;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #ff0072 5%,#cf1786 100%);
+cursor:pointer
+
+}
+
+
+#updateButton {
+border:1px solid #cb181d;
+width:125px;
+padding:5px;
+font-size:16px;
+display:inline-block;
+font-weight:700;
+color:#ffff;
+border-radius:3px;
+background:linear-gradient(to bottom, #ff0072 5%,#cf1786 100%);
+cursor:pointer
+
+}
+
+
+input[type=text] {
+margin-top:5px;
+margin-bottom:20px;
+width:96%;
+border-radius:5px;
+border:0;
+padding:5px 0
+}
+
+input[type=number] {
+margin-top:5px;
+margin-bottom:20px;
+width:96%;
+border-radius:5px;
+border:0;
+padding:5px 0
+}
+#name,#email {
+padding-left:10px
+}
+input[type=submit] {
+width:30%;
+border:1px solid #59b4d4;
+background:#0078a3;
+color:#eee;
+padding:3px 0;
+border-radius:5px;
+margin-left:33%;
+cursor:pointer
+}
+input[type=submit]:hover {
+border:1px solid #666;
+background:#555;
+color:#fff
+}
+.ui-dialog .ui-dialog-content {
+padding:2em
+}
+div.container {
+width:960px;
+height:610px;
+margin:50px auto;
+font-family:'Droid Serif',serif;
+position:relative
+}
+div.main {
+margin-top:18px;
+margin-bottom:25px;
+float:left;
+padding:10px 55px 25px;
+background-color:#212529;
+border:2px solid #fff;
+box-shadow:0 0 10px;
+border-radius:2px;
+font-size:13px;
+text-align:center
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+

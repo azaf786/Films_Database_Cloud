@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/Model/Film.java=UTF-8
+encoding//src/Model/FilmDAO.java=UTF-8
+encoding//src/Model/FilmDAOService.java=UTF-8
+encoding//src/Model/FilmDAOServiceLocator.java=UTF-8
+encoding//src/Model/FilmDAOSoapBindingStub.java=UTF-8
